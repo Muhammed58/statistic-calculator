@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistic Calculator</title>
+    <style>
+        body {
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            margin:20px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div>
+            <h1>Statistic Calculator</h1>
+            <h4>Enter a list of numbers separated by spaces.</h4>
+            <label for="">Number List:</label>
+            <input type="text" name="text-control" class="input">
+        </div>
+        <div class="buttons">
+            <button class="mean" onclick="mean()">Mean</button>
+            <button class="variance" onclick="variance()">Variance</button>
+            <button class="deviation" onclick="stdDeviation()">Standard Deviation</button>
+        </div>
+        <h1 class="numbers">hello</h1>
+    </div>
+    <script src="statistics.js"></script>
+</body>
+</html>
