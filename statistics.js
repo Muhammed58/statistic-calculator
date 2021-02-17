@@ -12,31 +12,29 @@
         const textToNumber = splitValue.map((i) => Number(i));
         return textToNumber;
     }
-    
-    //calculate mean of numbers
-    let mean = () => {
+    let getMean = () =>{
         //calculate mean
         var sum = numbers().reduce((a,b) => {
             return (a+b);
         });
         var mean1 = sum / numbers().length;
+        return mean1;
+    }
+    //calculate mean of numbers
+    let mean = () => {
         //calculate mean of numbers and display in h1 tag
-        var result = "Mean Of Numbers : " + mean1;
+        var result = "Mean Of Numbers : " + getMean();
         h1Tag.innerHTML = result;
         return result;
     }
     
     //calculate variance of numbers
     let variance = () => {
-        //calculate mean
-        var sum = numbers().reduce((a,b) => {
-            return (a+b);
-        });
-        var mean1 = sum / numbers().length;
+    
         //calculate variance
         var total = 0;
         for (var number of numbers()) {
-            total += Math.pow (number - mean1, 2);
+            total += Math.pow (number - getMean(), 2);
         }
         var result2 = total / numbers().length
         h1Tag.innerHTML = "Variance of Numbers : " +  result2;
