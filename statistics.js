@@ -20,6 +20,7 @@
         var mean1 = sum / numbers().length;
         return mean1;
     }
+    
     //calculate mean of numbers
     let mean = () => {
         //calculate mean of numbers and display in h1 tag
